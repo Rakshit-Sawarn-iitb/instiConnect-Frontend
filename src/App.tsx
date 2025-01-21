@@ -1,7 +1,8 @@
-function App(){
-  return(
-    <h1 className="text-7xl text-black bg-blue-50">Hello World</h1>
-  );
+import Navbar from "./components/Navbar";
+import Logo from "./components/Shared/Logo";
+
+function App() {
+  return <Navbar />;
 }
 
 export default App;
