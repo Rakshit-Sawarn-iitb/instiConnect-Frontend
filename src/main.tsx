@@ -1,3 +1,6 @@
+// import React, { useState, useEffect } from 'react';
+import React from "react";
+import "./App.css"; // CSS for keyframes
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
