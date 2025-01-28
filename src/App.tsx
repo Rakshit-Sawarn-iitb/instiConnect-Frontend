@@ -14,6 +14,7 @@ import Logo from "./components/Shared/Logo.tsx";
 import Startblog from "./components/startblog.tsx";
 import TalkBlog from "./components/Talkblog.tsx";
 import Postbutton from "./components/Shared/Postbutton.tsx";
+import Trendingtopics from "./components/Trendingtopics.tsx";
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
         <TalkBlog />
       </div>
       <div>space</div>
+      <div>
+        <Trendingtopics />
+      </div>
     </>
   );
 }
