@@ -11,7 +11,7 @@ function Startblog() {
             alt="Logo"
             className="h-10 w-10 rounded-[20px] self-start"
           />
-          <div className="w-[630px] h-[35px] font-lexend bg-[#372F51] text-gray-400 cursor-pointer rounded-[15px] ml-4 flex items-center justify-left pl-3">
+          <div className="w-[630px] h-[35px]  font-lexend bg-[#372F51] text-gray-400 cursor-pointer rounded-[15px] ml-4 flex items-center justify-left pl-3">
             Start a blog right here...
           </div>
         </div>
