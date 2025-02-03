@@ -1,18 +1,18 @@
-import Blogs from "./components/blogs";
-import Login from "./components/login";
-import Navbar from "./components/Navbar";
-import Ragister from "./components/register";
-import Logo from "./components/Shared/Logo";
+
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Register from './components/register'; // Adjust path as needed
 
 function App() {
   return (
-    // <Ragister/>
-    <Login/>
-    // <Blogs/>
-    // <Navbar/>
-    // <Logo/>
+    <Router>
+      <Routes>
+        {/* Add route for the Register page */}
+        <Route path="/register" element={<Register />} />
+        {/* You can add other routes as needed */}
+      </Routes>
+    </Router>
   );
-  
 }
+
 
 export default App;
