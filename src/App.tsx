@@ -1,3 +1,5 @@
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Register from './components/register'; // Adjust path as needed
 import { profile } from "./assets/dummy";
 import BlogCard from "./components/BlogCard";
 import PeopleYouMayKnow from "./components/peopleYouMayKnow";
@@ -9,16 +11,13 @@ import Startblog from "./components/startblog.tsx";
 
 function App() {
   return (
-    <>
-    <PeopleYouMayKnow profiles={profile}/>
-      <div className="flex flex-col">
-        <Navbar />
-      </div>
-      <div>
-        <Startblog />
-      </div>
-    </>
-  );
-}
+    <Router>
+      <Routes>
+        {/* Add route for the Register page */}
+        <Route path="/register" element={<Register />} />
+        {/* You can add other routes as needed */}
+      </Routes>
+    </Router>
+
 
 export default App;
