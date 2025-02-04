@@ -1,3 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  font-family: "Lexend";
+}
+@keyframes orbit {
+    0% {
+      transform: rotate(0deg) translateX(160px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg) translateX(160px) rotate(-360deg);
+    }
+  }
+  
+  .animate-orbit {
+    animation: orbit 5s linear infinite;
+  }
