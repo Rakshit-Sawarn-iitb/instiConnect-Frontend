@@ -1,6 +1,6 @@
 const Blogs: React.FC = () => {
     return (
-      <div className="relative w-full h-screen flex justify-center items-center overflow-hidden bg-gray-900">
+      <div className="absolute z-50 w-full h-screen flex justify-center items-center overflow-hidden bg-gray-900">
        
         <div className="relative w-[600px] h-[400px]">
           
