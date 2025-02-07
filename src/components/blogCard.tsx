@@ -94,8 +94,12 @@ const BlogCard = ({
 
           <span className="pl-[0.3125rem] text-[0.875rem]">Share</span>
         </div>
-        <p className="text-[#FFFFFF66] text-[0.875rem] ml-auto">{likes} likes</p>
-        <p className="text-[#FFFFFF66] text-[0.875rem] ml-[0.875rem]">{comments} comments</p>
+        <p className="text-[#FFFFFF66] text-[0.875rem] ml-auto">
+          {likes} likes
+        </p>
+        <p className="text-[#FFFFFF66] text-[0.875rem] ml-[0.875rem]">
+          {comments} comments
+        </p>
       </div>
     </div>
   );

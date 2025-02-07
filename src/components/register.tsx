@@ -10,7 +10,7 @@ function Register() {
     password: "",
     roll_number: "",
     phone_number: "",
-    email: "",  // Changed to 'email'
+    email: "", // Changed to 'email'
     department: "",
     hostel: "",
     current_year: 1,
@@ -22,7 +22,9 @@ function Register() {
   const [errorMessage, setErrorMessage] = useState("");
 
   // Handle form data changes (for both <input> and <textarea>)
-  const handleChange: React.ChangeEventHandler<HTMLInputElement | HTMLTextAreaElement> = (e) => {
+  const handleChange: React.ChangeEventHandler<
+    HTMLInputElement | HTMLTextAreaElement
+  > = (e) => {
     const { name, value } = e.target;
     setFormData((prevState) => ({
       ...prevState,
@@ -53,8 +55,12 @@ function Register() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen font-lexend bg-[#1E1A28] relative overflow-hidden">
       <div className="w-full max-w-sm p-8 rounded-lg shadow-lg text-center relative z-10 bg-[#2b273b]">
-        <h2 className="text-7xl font-bold text-[#d8d8d8] mb-1 -translate-y-3">iC</h2>
-        <p className="text-2xl text-[#ffffff] mb-14 -translate-y-3">Welcome to instiConnect!</p>
+        <h2 className="text-7xl font-bold text-[#d8d8d8] mb-1 -translate-y-3">
+          iC
+        </h2>
+        <p className="text-2xl text-[#ffffff] mb-14 -translate-y-3">
+          Welcome to instiConnect!
+        </p>
 
         <form className="space-y-4" onSubmit={handleSubmit}>
           <input
@@ -99,7 +105,7 @@ function Register() {
           />
           <input
             type="email"
-            name="email"  // Updated to 'email'
+            name="email" // Updated to 'email'
             placeholder="Email"
             value={formData.email}
             onChange={handleChange}
@@ -165,7 +171,7 @@ function Register() {
         </div>
 
         <p className="mt-4 text-xl text-[#ffffff]">
-          Already have an account?{' '}
+          Already have an account?{" "}
           <a href="#" className="text-[#cba5f7] hover:underline">
             Login
           </a>
@@ -175,10 +181,9 @@ function Register() {
       <div className="absolute bottom-0 w-full flex flex-col items-center py-4 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
         <hr className="w-3/4 border-t-[5px] border-[#d9d9d9] mb-6" />
         <p className="text-xl text-[#ffffff] mt-2">
-          Created with{' '}
-          <span className="text-red-500 font-semibold">❤️</span> by team{' '}
-          <span className="font-semibold">DashingDevs</span> in collaboration
-          with <span className="font-semibold">DevCom</span>
+          Created with <span className="text-red-500 font-semibold">❤️</span> by
+          team <span className="font-semibold">DashingDevs</span> in
+          collaboration with <span className="font-semibold">DevCom</span>
         </p>
       </div>
     </div>

@@ -1,7 +1,7 @@
 interface Props {
-    about: string;
-    name: string;
-    description: string;
+  about: string;
+  name: string;
+  description: string;
 }
 
 const ProfilePage = () => {
@@ -32,10 +32,19 @@ const ProfilePage = () => {
       </div>
       <div className="ml-4 mt-10">
         <p className="text-[#D6C9F8] text-[2rem] leading-[2.5rem]">About</p>
-        <p className="text-white text-[1.5rem] mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo minus voluptates ipsa qui perspiciatis cum? Porro itaque id ducimus adipisci impedit exercitationem, totam laborum dolorum temporibus obcaecati omnis! Nemo ducimus quidem illum alias tempora vel rerum sunt animi ad nam sed eveniet delectus quasi, inventore corrupti! Quae quas ipsam magnam.</p>
+        <p className="text-white text-[1.5rem] mt-2">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo minus
+          voluptates ipsa qui perspiciatis cum? Porro itaque id ducimus adipisci
+          impedit exercitationem, totam laborum dolorum temporibus obcaecati
+          omnis! Nemo ducimus quidem illum alias tempora vel rerum sunt animi ad
+          nam sed eveniet delectus quasi, inventore corrupti! Quae quas ipsam
+          magnam.
+        </p>
       </div>
       <div className="ml-4 mt-5">
-          <p className="text-[#D6C9F8] text-[2rem] leading-[2.5rem]">Liked Posts</p>
+        <p className="text-[#D6C9F8] text-[2rem] leading-[2.5rem]">
+          Liked Posts
+        </p>
       </div>
     </div>
   );

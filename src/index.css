@@ -7,14 +7,18 @@
   font-family: "Lexend";
 }
 @keyframes orbit {
-    0% {
-      transform: rotate(0deg) translateX(160px) rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg) translateX(160px) rotate(-360deg);
-    }
+  0% {
+    transform: rotate(0deg) translateX(160px) rotate(0deg);
   }
-  
-  .animate-orbit {
-    animation: orbit 5s linear infinite;
+  100% {
+    transform: rotate(360deg) translateX(160px) rotate(-360deg);
   }
+}
+
+.animate-orbit {
+  animation: orbit 5s linear infinite;
+}
+
+body {
+  background-color: #1b1826;
+}
