@@ -34,7 +34,7 @@ const Blogs: React.FC = () => {
   if (error) return <div className="text-red-500">{error}</div>;
 
   return (
-    <div className=" h-[100px] w-contain p-8">
+    <div className="h-[100px] overflow-y-scroll w-contain p-8">
       <h1 className="text-white text-2xl mb-6">Blogs</h1>
       <div className="space-y-6">
         {blogs.map((blog) => (
