@@ -12,16 +12,16 @@ function Trendingtopics() {
 
   return (
     <>
-      <div className="w-[300px] h-[363px] bg-[#372F51] flex flex-col items-center justify-start px-7 rounded-[20px] pt-5">
-        <div className="font-lexend font-bold text-white text-2xl mb-4">
+      <div className="w-[260px] h-[320px] bg-[#372F51] flex flex-col items-center justify-start px-5 rounded-[15px] pt-4">
+        <div className="font-lexend font-bold text-white text-xl mb-3">
           Trending Topics
         </div>
 
-        <div className="grid grid-cols-2 gap-x-6 gap-y-5">
+        <div className="grid grid-cols-2 gap-x-4 gap-y-4">
           {topics.map((topic) => (
             <button
               key={topic}
-              className={`px-6 h-12 bg-[#372F51] text-gray-400 rounded-full flex items-center justify-center font-medium border-2 border-gray-400 hover:border-orange-500 transition-colors`}
+              className="px-5 h-10 bg-[#372F51] text-gray-400 rounded-full flex items-center justify-center font-medium border border-gray-400 hover:border-orange-500 transition-colors"
             >
               {topic}
             </button>
