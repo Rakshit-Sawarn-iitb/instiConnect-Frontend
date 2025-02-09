@@ -5,6 +5,7 @@ import TalkBlog from "../components/Talkblog.tsx";
 import BlogCard from "../components/blogCard.tsx";
 import Trendingtopics from "../components/Trendingtopics.tsx";
 import PeopleYouMayKnow from "../components/peopleYouMayKnow.tsx";
+import Blogs from "../components/blogs.tsx";
 
 function Homepage() {
   const [showTalkBlog, setShowTalkBlog] = useState(false);
@@ -28,14 +29,7 @@ function Homepage() {
           {/* Center Section */}
           <div className="flex-grow p-4 flex flex-col space-y-4 z-0 items-center">
             <Startblog onStartBlog={() => setShowTalkBlog(true)} />
-            <BlogCard
-              name="Andrew NG"
-              description="something"
-              likes={10}
-              comments={10}
-              text="something"
-              date="1 day ago"
-            />
+            <Blogs />
           </div>
 
           {/* Right Section */}

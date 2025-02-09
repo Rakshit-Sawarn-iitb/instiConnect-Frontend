@@ -15,7 +15,7 @@ function TalkBlog({ onClose }) {
     try {
       const response = await postBlog({
         title: blogTitle,
-        content: blogContent,
+        text: blogContent,
       });
       console.log("Blog posted successfully:", response.data);
       alert("Blog posted successfully!");

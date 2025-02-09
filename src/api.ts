@@ -44,10 +44,7 @@ export const fetchUsers = async () => {
   }
 };
 
-export const postBlog = async (blogData: {
-  title: string;
-  content: string;
-}) => {
+export const postBlog = async (blogData: { title: string; text: string }) => {
   try {
     const token = await AsyncStorage.getItem("accessToken");
     if (!token) throw new Error("No access token found.");
@@ -59,6 +56,27 @@ export const postBlog = async (blogData: {
     });
   } catch (error) {
     console.error("Error posting blog:", error);
+    throw error;
+  }
+};
+
+export const fetchBlog = async () => {
+  try {
+    // Retrieve the token from AsyncStorage
+    const token = await AsyncStorage.getItem("accessToken");
+
+    if (!token) {
+      throw new Error("No access token found.");
+    }
+
+    // Make the API request with the token
+    return api.get("blog/", {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
+  } catch (error) {
+    console.error("Error fetching users:", error);
     throw error;
   }
 };
