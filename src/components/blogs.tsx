@@ -1,15 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { fetchBlog } from "../api";
-import BlogCard from "./blogCard";
+import BlogCard from "./BlogCard";
 
 interface Blog {
   id: number;
-  name: string;
-  description: string;
-  date: string;
+  title: string;
   text: string;
+  date: string;
   likes: number;
-  comments: number;
 }
 
 const Blogs: React.FC = () => {
@@ -36,18 +34,16 @@ const Blogs: React.FC = () => {
   if (error) return <div className="text-red-500">{error}</div>;
 
   return (
-    <div className="bg-gray-900 min-h-screen p-8">
+    <div className=" h-[100px] w-contain p-8">
       <h1 className="text-white text-2xl mb-6">Blogs</h1>
       <div className="space-y-6">
         {blogs.map((blog) => (
           <BlogCard
             key={blog.id}
-            name={blog.name}
-            description={blog.description}
-            date={blog.date}
+            title={blog.title}
             text={blog.text}
+            date={blog.date}
             likes={blog.likes}
-            comments={blog.comments}
           />
         ))}
       </div>
